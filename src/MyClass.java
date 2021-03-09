@@ -1,15 +1,20 @@
+import java.util.Random;
+
 public class MyClass  {
    private String varString;
    private int varInt;
+    public static final String[] NAMES = {"Муся", "Пуся", "Хвостик", "Зефирка", "Матильда", "Лапочка", "Ксюша", "Маша"};
+    public static Random RAND = new Random();
 
     public MyClass(String varString, int varInt) {
         this.varString = varString;
         this.varInt = varInt;
+
     }
 
     @Override
     public String toString() {
-        return "Mой класс{" +
+        return "Совпало{" +
                 "name='" + varString + '\'' +
                 ", age=" + varInt +
                 '}';
@@ -29,6 +34,16 @@ return result;
         }
         return result;
     }
+
+
+    public static String getRandOfArray(String[] arr) {
+        int i = RAND.nextInt(arr.length);
+        return arr[i];
+    }
+    public static String getString(){
+        return    getRandOfArray(NAMES);
+    }
+
 
 
 
