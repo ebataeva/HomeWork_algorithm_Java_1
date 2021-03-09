@@ -15,8 +15,8 @@ public class MyClass  {
     @Override
     public String toString() {
         return "Совпало{" +
-                "name='" + varString + '\'' +
-                ", age=" + varInt +
+                "Строковая переменная ='" + varString + '\'' +
+                ", целочисленная переменная =" + varInt +
                 '}';
     }
     public boolean compare(String var){
