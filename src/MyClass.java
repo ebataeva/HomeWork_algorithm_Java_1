@@ -20,19 +20,11 @@ public class MyClass  {
                 '}';
     }
     public boolean compare(String var){
-        boolean result = false;
-if (this.varString.equals(var)){
-   result = true;
-}
-return result;
+return this.varString.equals(var);
     }
 
     public boolean compare (int var){
-        boolean result = false;
-        if (this.varInt == var){
-            result = true;
-        }
-        return result;
+   return this.varInt == var;
     }
 
 
