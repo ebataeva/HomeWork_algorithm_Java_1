@@ -31,7 +31,7 @@ public class Main {
         long timeBubble = Sort.bubbleSort(myArrIntegers); //2.4
         System.out.println("\n разница между сортировкой пузырьком и обычной - " + (timeSort-timeBubble)); //2.4
         long timeChoice = Sort.sortByChoice(myArrIntegers); //2.5
-        System.out.println("\n разница между сортировкой выбором и обычной - " + (timeSort-timeChoice)); //2.5
+        System.out.printf("\n разница между сортировкой выбором и обычной - %d, между выбором и пузырьком - %d ",  (timeSort-timeChoice),(timeBubble-timeChoice) ); //2.5
         long timeInserts = Sort.insertSort(myArrIntegers); //2.6
         System.out.printf("\n разница между сортировкой вставками и обычной - %d, между пузырьковой и вставками - %d, между выбром и вставками - %d",  (timeInserts - timeSort), (timeInserts-timeBubble), (timeInserts-timeChoice)); //2.6
 
