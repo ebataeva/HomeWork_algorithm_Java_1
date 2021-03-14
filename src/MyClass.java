@@ -6,6 +6,14 @@ public class MyClass  {
     public static final String[] NAMES = {"Муся", "Пуся", "Хвостик", "Зефирка", "Матильда", "Лапочка", "Ксюша", "Маша"};
     public static Random RAND = new Random();
 
+    public String getVarString() {
+        return this.varString;
+    }
+
+    public int getVarInt() {
+        return varInt;
+    }
+
     public MyClass(String varString, int varInt) {
         this.varString = varString;
         this.varInt = varInt;
@@ -14,8 +22,7 @@ public class MyClass  {
 
     @Override
     public String toString() {
-        return "Совпало{" +
-                "Строковая переменная ='" + varString + '\'' +
+        return  "Строковая переменная ='" + varString + '\'' +
                 ", целочисленная переменная =" + varInt +
                 '}';
     }
@@ -29,7 +36,7 @@ return this.varString.equals(var);
 
 
     public static String getRandOfArray(String[] arr) {
-        int i = RAND.nextInt(arr.length);
+        int i = RAND.nextInt(5);
         return arr[i];
     }
     public static String getString(){
